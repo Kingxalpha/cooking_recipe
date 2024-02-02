@@ -11,7 +11,9 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-          "hero-img": "url('/public/HeroSection.png')"
+          "hero-img": "url('/public/HeroSection.png')",
+          "subscribe-img": "url('/public/group.png')",
+
       },
       screens:{
         'sm': {'min': '330px', 'max': '767px'},

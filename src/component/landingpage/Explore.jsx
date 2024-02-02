@@ -10,7 +10,7 @@ const Explore = () => {
             <h2 className='sm:w-[30%] sm:mt-2 text-black sm:font-bold'>Our Diverse Pallete</h2>
             <p className='text-black lg:w-1/2'>If you are a breakfast enthusiast, a connoisseur of savory delights, or on the lookout for irresistible desserts, our curated selection has something to satisfy every palate.</p>
             <Link href="/" passHref>
-            <button className='p-2 px-3 rounded-xl mt-3 border border-black hover:bg-[#f29c33] text-black hover:text-[#fff] hover:duration-100 hover:transition'>
+            <button className='p-2 px-3 rounded-xl mt-3 border border-black hover:bg-[#f29c33] hover:border-none text-black hover:text-[#fff] hover:duration-100 hover:transition'>
             See More
             </button>
         </Link>

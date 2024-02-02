@@ -23,7 +23,7 @@ function Featured() {
                     <p className='sm:w-[100%] lg:w-[90%]'>Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken</p>
                     <div className='lg:flex lg:flex-row sm:flex-col sm:mt-3 lg:items-center lg:justify-between lg:mt-5'>
                         <p className='sm:w-[100%]'>40 Min - easy prep - 3 serves</p>
-                        <button className='border border-black p-2 rounded-xl sm:w-[100%] sm:mt-2'>View Recipe</button>
+                        <button className='border border-black p-2 rounded-xl sm:w-[100%] sm:mt-2 hover:border-none hover:bg-[#f29c33] hover:text-white'>View Recipe</button>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@ function Featured() {
                     <p className='sm:w-[100%] lg:w-[100%]'>Dive into the velvety indulgence of our Decadent Chocolate Mousse. A dessert that transcends sweetness!</p>
                     <div className='lg:flex lg:flex-row sm:flex-col sm:mt-3 lg:items-center lg:justify-between'>
                         <p className='sm:w-[100%]'>30 Min - medium prep - 4 serves</p>
-                        <button className='border border-black p-2 rounded-xl sm:w-[100%] sm:mt-2'>View Recipe</button>
+                        <button className='border border-black p-2 rounded-xl sm:w-[100%] sm:mt-2 hover:border-none hover:bg-[#f29c33] hover:text-white'>View Recipe</button>
                     </div>
                 </div>
             </div>

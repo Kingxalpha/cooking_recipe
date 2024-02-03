@@ -2,13 +2,14 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareCaretRight } from '@fortawesome/free-solid-svg-icons';
 import { faSquareCaretLeft } from '@fortawesome/free-solid-svg-icons';
-import Image from 'next/image';
+import Image from 'next/image'
 
-function Featured() {
+function Newest() {
   return (
-    <div className='p-3 bg-[#F0EBE1]'>
+    <div>
+         <div className='p-3 bg-[#F0EBE1]'>
         <div className='lg:flex lg:items-center lg:justify-between sm:flex-col'>
-            <h2 className='text-black font-bold'>FEATURED RECIPES</h2>
+            <h2 className='text-black font-bold'>NEWEST RECIPES</h2>
             <div className='flex flex-row items-center gap-3'>
                 <FontAwesomeIcon className='bg-gray-400 p-2 rounded-full' icon={faSquareCaretLeft} />
                 <FontAwesomeIcon className='bg-gray-600 p-2 rounded-full' icon={faSquareCaretRight} />
@@ -44,7 +45,8 @@ function Featured() {
             </div> */}
         </div>
     </div>
+    </div>
   )
 }
 
-export default Featured
+export default Newest

@@ -3,7 +3,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div className='bg-[#D9D9D9]'>
+    <div className='bg-[#F0EBE1]'>
         <div className='lg:flex lg:flex-row lg:p-5 sm:p-3 sm:flex-col'>
             <div className=''>
                 <div className='lg:flex sm:flex-col'>

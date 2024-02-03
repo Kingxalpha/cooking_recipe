@@ -50,19 +50,19 @@ function Recipez() {
   ];
 
   return (
-    <div className='flex flex-col items-center justify-center p-4 bg-white'>
+    <div className='flex flex-col items-center justify-center p-4 bg-[#F0EBE1]'>
       <div className='flex flex-col items-center mt-2'>
         <p className='p-2 rounded-xl bg-[#EE6352] mb-2 text-white'>Recipes</p>
         <h1 className='capitalize text-xl lg:w-[20%] text-center mb-2 text-black'>Embark on a journey</h1>
         <p className='lg:w-[50%] text-center mb-2 text-black'>With our diverse collection of recipes, we have something to satisfy every palate.</p>
         <div className='lg:flex lg:flex-row lg:mb-3 sm:grid  sm:grid-cols-3 gap-3 sm:mb-2'>
           <p className='p-2 border-2 rounded-xl bg-[#9FDC26] px-5'>ALL</p>
-          <p className='p-2 border-2 rounded-xl text-black sm:text-[12px]'>VEGAN</p>
-          <p className='p-2 border-2 rounded-xl text-black sm:text-[12px]'>BREAKFAST</p>
-          <p className='p-2 border-2 rounded-xl text-black sm:text-[12px]'>LUNCH</p>
-          <p className='p-2 border-2 rounded-xl text-black sm:text-[12px]'>DINNER</p>
-          <p className='p-2 border-2 rounded-xl text-black sm:text-[12px]'>DESSERT</p>
-          <p className='p-2 border-2 rounded-xl text-black sm:text-[12px]'>QUICKBITE!</p>
+          <p className='p-2 border-2 border-black rounded-xl text-black sm:text-[12px]'>VEGAN</p>
+          <p className='p-2 border-2 border-black rounded-xl text-black sm:text-[12px]'>BREAKFAST</p>
+          <p className='p-2 border-2 border-black rounded-xl text-black sm:text-[12px]'>LUNCH</p>
+          <p className='p-2 border-2 border-black rounded-xl text-black sm:text-[12px]'>DINNER</p>
+          <p className='p-2 border-2 border-black rounded-xl text-black sm:text-[12px]'>DESSERT</p>
+          <p className='p-2 border-2 border-black rounded-xl text-black sm:text-[12px]'>QUICKBITE!</p>
         </div>
       </div>
       <div className=''>
@@ -72,7 +72,7 @@ function Recipez() {
               <div className=''>
                 {food.image}
               </div>
-              <div className='flex flex-col bg-white text-black lg:w-[86%] sm:w-[100%] mb-3 p-2 shadow-lg rounded-br-xl rounded-bl-xl'>
+                <div className='flex flex-col bg-[#F0EBE1] text-black lg:w-[86%] sm:w-[100%] mb-3 p-2 shadow-lg rounded-br-xl rounded-bl-xl'>
                 <h1 className='mt-2 font-bold'>{food.heading}</h1>
                 <p className='mt-2 text-[12px] text-gray-500'>{food.content}</p>
                 <div className='flex lg:flex-row lg:items-center sm:flex-col justify-between sm:mt-2'>

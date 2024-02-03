@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div>
       <div className='w-[100%] flex'>
-        <nav className='flex justify-around w-[100%] items-center p-3 bg-[#fff] sm:w-[100%] sm:p-[10px]' onClick={toggleMenu}>
+        <nav className='flex justify-around w-[100%] items-center p-3 bg-[#F0EBE1] sm:w-[100%] sm:p-[10px]' onClick={toggleMenu}>
           <div>
             <Image height={100} width={100} src={"/Log.png"}/>
           </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
               <Link href="/recipes">Recipes</Link>
             </li>
             <li className='cursor-pointer hover:text-[#f29c33]'>
-              <Link href="/cooking-tips">Cooking Tips</Link>
+              <Link href="/cookingtips">Cooking Tips</Link>
             </li>
           </ul>
           <div className='flex flex-row items-center gap-3 sm:hidden md:hidden'>
@@ -49,18 +49,24 @@ const Navbar = () => {
           <button className='bg-black pt-2 pb-2 pl-3 pr-3 rounded-xl text-white  lg:hidden sm:block transition duration-150 ease-in-out'>
             {isMenuOpen ? <RxCross1/> : <AiOutlineMenu /> }
           </button>
-          <button className='bg-Button pt-2 pb-2 pl-3 pr-3 text-lg rounded-xl md:hidden sm:hidden text-white'>Join Us</button>
         </nav>
       </div>
-      <ul className={`${isMenuOpen? "block" : "hidden"  } flex flex-col gap-3 items-center justify-center text-white h-[40vh] transition duration-300 ease-in-out lg:hidden mt-6 z-[999]`}>
-        <li className='cursor-pointer'>Home</li>
-        <li className='cursor-pointer'>About Us</li>
-        <li className='cursor-pointer'>Recipes</li>
-        <li className='cursor-pointer'>Cooking Tips</li>
-        <div className='bg-gray-500 flex items-center w-7 h-7 rounded-full'>
-            <FontAwesomeIcon icon={faSearch} />
-        </div>
-        <button className='bg-Button pt-2 pb-2 pl-3 pr-3 rounded-xl text-white w-[30%]'>Subscribe</button>
+      <ul className={`${isMenuOpen? "block" : "hidden"  } flex flex-col gap-3 p-3 justify-center text-white h-[40vh] transition duration-300 ease-in-out lg:hidden mt-6 z-[999]`}>
+      <li className='cursor-pointer hover:text-[#f29c33]'>
+              <Link href="/">
+                Home
+              </Link>
+            </li>
+            <li className='cursor-pointer hover:text-[#f29c33]'>
+            <Link href="/about">About Us</Link>
+            </li>
+            <li className='cursor-pointer hover:text-[#f29c33]'>
+              <Link href="/recipes">Recipes</Link>
+            </li>
+            <li className='cursor-pointer hover:text-[#f29c33]'>
+              <Link href="/cookingtips">Cooking Tips</Link>
+            </li>
+        <button className='bg-[#f29c33] pt-2 pb-2 pl-3 pr-3 rounded-xl text-white w-[30%]'>Subscribe</button>
       </ul>
     </div>
   )

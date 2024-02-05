@@ -13,6 +13,9 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
           "hero-img": "url('/public/HeroSection.png')",
           "subscribe-img": "url('/public/group.png')",
+          "gluten-free": "url('/public/glutenfree.png')",
+          "allergy-friend": "url('/public/allergyfriend.png')",
+          "plant-based": "url('/public/plantbased.png')",
 
       },
       screens:{

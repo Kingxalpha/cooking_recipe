@@ -2,10 +2,9 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import React, { useState } from 'react'
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { AiFillFacebook, AiFillInstagram, AiFillTwitterSquare, AiFillYoutube } from 'react-icons/ai'
 
 
 const Navbar = () => {
@@ -21,7 +20,7 @@ const Navbar = () => {
           <div>
             <Image height={100} width={100} src={"/Log.png"}/>
           </div>
-          <ul className='flex flex-row items-center justify-between gap-10 text-black sm:hidden md:hidden text-2xl'>
+          <ul className='flex flex-row items-center justify-between gap-10 text-black sm:hidden md:hidden min-lg:hidden text-2xl'>
             <li className='cursor-pointer hover:text-[#f29c33]'>
               <Link href="/">
                 Home
@@ -38,10 +37,10 @@ const Navbar = () => {
             </li>
           </ul>
           <div className='flex flex-row items-center gap-3 sm:hidden md:hidden'>
-            <div className='bg-gray-500 w-7 h-7 flex items-center rounded-full'>
-                <FontAwesomeIcon icon={faSearch} />
+            <div className='bg-gray-500 p-1 flex items-center rounded-full'>
+                <AiOutlineSearch/>
             </div>
-            <div className='p-2 bg-black px-5 rounded-md'>
+            <div className='p-2 bg-black px-5 rounded-md cursor-pointer'>
                 <p>Subcribe</p>
             </div>
           </div>
@@ -51,7 +50,7 @@ const Navbar = () => {
           </button>
         </nav>
       </div>
-      <ul className={`${isMenuOpen? "block" : "hidden"  } flex flex-col gap-3 p-3 justify-center text-white h-[40vh] transition duration-300 ease-in-out lg:hidden mt-6 z-[999]`}>
+      <ul className={`${isMenuOpen? "block bg-black absolute top-8 inset-0 h-[50vh] transition duration-300 ease-in-out"  : "hidden"  } flex flex-col gap-3 p-3 justify-center text-white h-[40vh] transition duration-300 ease-in-out lg:hidden mt-6 z-[98px]`}>
       <li className='cursor-pointer hover:text-[#f29c33]'>
               <Link href="/">
                 Home
@@ -66,8 +65,20 @@ const Navbar = () => {
             <li className='cursor-pointer hover:text-[#f29c33]'>
               <Link href="/cookingtips">Cooking Tips</Link>
             </li>
-        <button className='bg-[#f29c33] pt-2 pb-2 pl-3 pr-3 rounded-xl text-white w-[30%]'>Subscribe</button>
+            <div className='flex items-center gap-5'>
+            <div className='bg-gray-500 p-1 flex items-center rounded-full'>
+                <AiOutlineSearch/>
+            </div>
+            <button className='bg-[#f29c33] pt-2 pb-2 pl-3 pr-3 rounded-xl text-white w-[30%] cursor-pointer'>Subscribe</button>
+            </div>
+            <div className='flex gap-3'>
+                <AiFillFacebook/>
+                <AiFillInstagram/>
+                <AiFillTwitterSquare/>
+                <AiFillYoutube/>
+            </div>
       </ul>
+      
     </div>
   )
 }

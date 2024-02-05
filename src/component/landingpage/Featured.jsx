@@ -1,7 +1,5 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquareCaretRight } from '@fortawesome/free-solid-svg-icons';
-import { faSquareCaretLeft } from '@fortawesome/free-solid-svg-icons';
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import Image from 'next/image';
 
 function Featured() {
@@ -10,8 +8,12 @@ function Featured() {
         <div className='lg:flex lg:items-center lg:justify-between sm:flex-col'>
             <h2 className='text-black font-bold'>FEATURED RECIPES</h2>
             <div className='flex flex-row items-center gap-3'>
-                <FontAwesomeIcon className='bg-gray-400 p-2 rounded-full' icon={faSquareCaretLeft} />
-                <FontAwesomeIcon className='bg-gray-600 p-2 rounded-full' icon={faSquareCaretRight} />
+                <div className='bg-gray-300 rounded-full p-0.5 items-center'>
+                 <AiOutlineArrowLeft/>
+                </div>
+                <div className='bg-gray-600 rounded-full p-0.5 items-center'>
+                 <AiOutlineArrowRight/>
+                </div>
             </div>
         </div>
         <div className='lg:flex lg:flex-row sm:flex-col'>
@@ -29,7 +31,7 @@ function Featured() {
             </div>
             <div className='flex flex-col sm:items-center relative  '>
                 <Image className='lg:hidden p-2' height={100} width={500} src={"/image2sm.png"}/>
-                <Image className='sm:hidden' height={100} width={500} src={"/image2lg.png"}/>
+                <Image className='sm:hidden' height={100} width={500} src={"/group+tg.png"}/>
                 <div className='lg:bg-[#F0EBE1] sm:bg-[#F0EBE1] sm:text-black sm:p-3 lg:text-black lg:w-[70.5%] sm:w-[95%] lg:p-5 rounded-br-xl rounded-bl-xl shadow-lg'>
                     <h2 className='sm:w-[100%] font-bold'>Decadent Chocolate Mousse</h2>
                     <p className='sm:w-[100%] lg:w-[100%]'>Dive into the velvety indulgence of our Decadent Chocolate Mousse. A dessert that transcends sweetness!</p>

@@ -11,7 +11,7 @@ function About() {
                         <p className='p-2 rounded-xl bg-[#EE6352] lg:w-[15%] lg:mb-2 sm:w-[30%] sm:mb-2'>About Us</p>
                         <h2 className='font-bold text-xl lg:mb-2'>OUR CULINARY <br /> CHRONICLE</h2>
                         <p className=' text-gray-500 sm:mb-2 lg:mb-2'>Our journey is crafted with dedication, creativity, and an unrelenting commitment to delivering delightful culinary experiences,Join us in savoring the essence of every dish and the stories that unfold.</p>
-                        <button className='p-2 rounded-xl border-2 border-gray-500 hover:border-none transition hover:text-white hover:bg-[#f29c33] sm:w-[100%]'>Read More</button>
+                        <button className='p-2 rounded-xl border-2 border-gray-500 hover:border-none transition hover:text-white hover:bg-[#f29c33] sm:w-[100%] cursor-pointer'>Read More</button>
                     </div>
                     <div className='sm:mb-2 lg:mr-5'>
                         <Image height={100} width={600} src={"/card.png"}/>

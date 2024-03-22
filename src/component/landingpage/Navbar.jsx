@@ -37,7 +37,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className='flex flex-row items-center gap-3 sm:hidden md:hidden'>
-            <div className='bg-gray-500 p-1 flex items-center rounded-full'>
+            <div className='bg-gray-500 p-1 flex items-center rounded-full lg:hidden'>
                 <AiOutlineSearch/>
             </div>
             <div className='p-2 bg-black px-5 rounded-md cursor-pointer'>

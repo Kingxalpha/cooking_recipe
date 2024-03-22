@@ -4,7 +4,7 @@ import { AiFillFacebook, AiFillInstagram, AiFillTwitterSquare, AiFillYoutube } f
 
 function Footer() {
   return (
-    <div className='flex flex-col justify-between sm:items-center sm:text-center sm:gap-5'>
+    <div className='flex flex-col justify-between sm:items-center sm:text-center sm:gap-5 sm:bg-black sm:text-white'>
         <div className='lg:flex lg:flex-row lg:items-center sm:flex-col sm:items-center lg:justify-around lg:p-3'>
             <div className='sm:mt-3'>
                 <Image height={100} width={100} src={"/new-footer.png"}/>

@@ -70,7 +70,7 @@ function Description() {
        </div>
             
             <div className='mb-3'>
-                <h2 className='uppercase font-bold text-[40px]'>Instructions</h2>
+                <h2 className='uppercase font-bold lg:text-[40px]'>Instructions</h2>
                 <p className='lg:w-1/2 sm:hidden'>This recipe goes beyond the basics, inviting you to savor the richness of a creamy tomato basil sauce that clings to each strand of perfectly cooked pasta. It's a celebration of simplicity, where every ingredient plays a crucial role in creating a dish that is as comforting as it is delightful.</p>
                 <p className='lg:w-1/2 sm:hidden'>Allow the chicken to rest for 10 minutes before carving. This brief resting period is essential; it allows the juices to redistribute, ensuring each slice is succulent and bursting with flavor. As you carve into the golden exterior, be prepared for the enticing aroma that fills the air, signaling that your Citrus Infusion Delight is ready to be savored.</p>
             </div>
@@ -149,7 +149,7 @@ function Description() {
                         it's a shared space where the love for food transcends boundaries. 
                         Here, we celebrate the art of crafting meals that not only nourish the body but also feed the soul.
                     </p>
-                    <button className='p-1 rounded-xl border-black border'>Learn More</button>
+                    <button className='p-1 rounded-xl border-black border cursor-pointer'>Learn More</button>
                 </div>
             </div>
        </div>
